@@ -164,11 +164,6 @@ header{position:sticky;top:0;z-index:40;background:rgba(127,29,29,.96);backdrop-
 .ballot-msg.ok{background:#dcfce7;color:#14532d}
 .ballot-msg.warn{background:#fee2e2;color:#7f1d1d}
 
-/* poster */
-.poster{display:grid;gap:26px;align-items:center}
-@media(min-width:860px){.poster{grid-template-columns:1fr 1fr;gap:48px}}
-.poster img{border-radius:var(--radius);box-shadow:0 24px 50px -20px rgba(0,0,0,.4);border:5px solid #fff}
-.poster .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
 
 /* aspirasi */
 .contact{background:linear-gradient(160deg,#14532d,#166534);color:#fff;border-radius:28px;padding:32px 22px;display:grid;gap:26px}
@@ -347,28 +342,6 @@ footer small{display:block;margin-top:22px;font-size:13px;opacity:.6}
   </div>
 </section>
 
-<!-- POSTER -->
-<section style="background:#fff">
-  <div class="wrap poster">
-    <img src="img/poster.jpg" alt="Poster kampanye Bang Chandra Wahyudi, calon Ketua RW nomor 1, berisi visi dan 9 misi" width="1080" height="1080" loading="lazy" class="reveal">
-    <div>
-      <span class="eyebrow">Bantu Sebarkan</span>
-      <h2>Bagikan ke Grup Keluarga &amp; Tetangga</h2>
-      <p class="lead" style="margin-top:12px">Satu kali bagikan, banyak warga jadi tahu. Simpan poster ini atau kirim halaman ini lewat WhatsApp.</p>
-      <div class="actions">
-        <button type="button" class="btn btn-wa" id="share-btn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>
-          Bagikan Halaman
-        </button>
-        <a href="img/poster.jpg" download="Poster-Bang-Chandra-No1.jpg" class="btn btn-line">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-          Simpan Poster
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ASPIRASI -->
 <section id="aspirasi">
   <div class="wrap">
@@ -412,6 +385,12 @@ footer small{display:block;margin-top:22px;font-size:13px;opacity:.6}
     <div class="badge-no">1</div>
     <b>Bang Chandra Wahyudi</b>
     <p>Calon Ketua RW Nomor 1. Rukun · Aman · Bersih · Transparan · Gotong Royong · Kekeluargaan.</p>
+    <div style="margin-top:20px">
+        <button type="button" class="btn btn-wa" id="share-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>
+          Bagikan Halaman
+        </button>
+    </div>
     <small>© 2026 Tim Pemenangan Bang Chandra Wahyudi · Bersama Kita Wujudkan RW yang Lebih Baik</small>
   </div>
 </footer>
