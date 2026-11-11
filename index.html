@@ -56,7 +56,9 @@ header{position:sticky;top:0;z-index:40;background:rgba(127,29,29,.96);backdrop-
 .menu a{text-decoration:none;font-weight:700;font-size:16px;padding:8px 14px;border-radius:10px;opacity:.9}
 .menu a:hover{background:rgba(255,255,255,.12);opacity:1}
 .nav .btn{min-height:44px;padding:8px 14px;font-size:15px;white-space:nowrap;flex:none}
+.brand{min-width:0;flex:1 1 auto}
 .brand>span:last-child{min-width:0}
+@media(max-width:380px){.brand small{display:none}.brand b{font-size:15px}}
 .brand b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 @media(min-width:900px){.menu{display:flex}}
 
@@ -152,7 +154,7 @@ header{position:sticky;top:0;z-index:40;background:rgba(127,29,29,.96);backdrop-
 .choice .ph img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
 .choice .ph svg{width:46%;color:#a8a29e}
 .choice .nm{padding:10px 6px;font-weight:800;font-size:15px;line-height:1.25}
-.hole{position:absolute;left:50%;top:50%;width:88px;height:88px;margin:-44px 0 0 -44px;border-radius:50%;border:6px solid var(--red-3);display:grid;place-items:center;color:var(--red-3);font-weight:800;font-size:15px;background:rgba(255,255,255,.88);transform:scale(0) rotate(-20deg);transition:transform .35s cubic-bezier(.2,1.6,.4,1)}
+.hole{position:absolute;left:50%;top:66%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;border:6px solid var(--red-3);display:grid;place-items:center;color:var(--red-3);font-weight:800;font-size:15px;background:rgba(255,255,255,.88);transform:scale(0) rotate(-20deg);transition:transform .35s cubic-bezier(.2,1.6,.4,1)}
 .hole::before{content:"";width:16px;height:16px;border-radius:50%;background:var(--ink);box-shadow:0 0 0 4px #fff}
 .choice.on{border-color:var(--red-3)}
 .choice.on .hole{transform:scale(1) rotate(-12deg)}
